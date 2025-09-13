@@ -172,7 +172,7 @@ function updateUI() {
         dashboardBtn.style.display = 'none';
         logoutBtn.style.display = 'none';
         // redirect to search
-        $('#container').style.display = 'block';
+        $('#container').style.display = 'flex';
         $('#searchSection').style.display = 'block';
         $('#roomsContainer').style.display = 'block';
         $('#dashboardSection').classList.remove('active');
@@ -484,7 +484,7 @@ window.cancelBooking = async function (bookingId) {
 
 // go back
 window.showBackToSearch = function () {
-    $('#container').style.display = 'block';
+    $('#container').style.display = 'flex';
     $('#searchSection').style.display = 'block';
     $('#roomsContainer').style.display = 'block';
     $('#dashboardSection').classList.remove('active');
